@@ -1,0 +1,170 @@
+[2024-03-24T16:30:12.107+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-24T16:30:12.204+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-24T16:30:12.206+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-24T16:30:12.311+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): import_tomtom_data_to_csv> on 2024-03-23 00:00:00+00:00
+[2024-03-24T16:30:12.330+0000] {standard_task_runner.py:60} INFO - Started process 377 to run task
+[2024-03-24T16:30:12.356+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom', 'import_tomtom_data_to_csv', 'scheduled__2024-03-23T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_dag.py', '--cfg-path', '/tmp/tmpqcv0cp48']
+[2024-03-24T16:30:12.387+0000] {standard_task_runner.py:88} INFO - Job 8: Subtask import_tomtom_data_to_csv
+[2024-03-24T16:30:12.539+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-24T16:30:12.764+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [running]> on host cc0f04bb20f0
+[2024-03-24T16:30:13.588+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom' AIRFLOW_CTX_TASK_ID='import_tomtom_data_to_csv' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-23T00:00:00+00:00'
+[2024-03-24T16:30:13.599+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-24T16:30:13.605+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_ingestion.py --date 2024-03-23']
+[2024-03-24T16:30:13.682+0000] {subprocess.py:86} INFO - Output:
+[2024-03-24T16:30:23.820+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-24T16:30:23.999+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom, task_id=import_tomtom_data_to_csv, execution_date=20240323T000000, start_date=20240324T163012, end_date=20240324T163023
+[2024-03-24T16:30:24.091+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-24T16:30:24.248+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-03-24T16:50:26.797+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-24T16:50:26.892+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-24T16:50:26.901+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-24T16:50:27.167+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): import_tomtom_data_to_csv> on 2024-03-23 00:00:00+00:00
+[2024-03-24T16:50:27.208+0000] {standard_task_runner.py:60} INFO - Started process 268 to run task
+[2024-03-24T16:50:27.244+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom', 'import_tomtom_data_to_csv', 'scheduled__2024-03-23T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_dag.py', '--cfg-path', '/tmp/tmpo3jzn373']
+[2024-03-24T16:50:27.280+0000] {standard_task_runner.py:88} INFO - Job 8: Subtask import_tomtom_data_to_csv
+[2024-03-24T16:50:27.480+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-24T16:50:27.735+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [running]> on host 1ef4dfe662c6
+[2024-03-24T16:50:28.797+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom' AIRFLOW_CTX_TASK_ID='import_tomtom_data_to_csv' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-23T00:00:00+00:00'
+[2024-03-24T16:50:28.810+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-24T16:50:28.819+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_ingestion.py --date 2024-03-23']
+[2024-03-24T16:50:28.919+0000] {subprocess.py:86} INFO - Output:
+[2024-03-24T16:50:39.019+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-24T16:50:39.269+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom, task_id=import_tomtom_data_to_csv, execution_date=20240323T000000, start_date=20240324T165026, end_date=20240324T165039
+[2024-03-24T16:50:39.453+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-24T16:50:39.568+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-03-24T17:28:56.035+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-24T17:28:56.120+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-24T17:28:56.123+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-24T17:28:56.228+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): import_tomtom_data_to_csv> on 2024-03-23 00:00:00+00:00
+[2024-03-24T17:28:56.255+0000] {standard_task_runner.py:60} INFO - Started process 313 to run task
+[2024-03-24T17:28:56.289+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom', 'import_tomtom_data_to_csv', 'scheduled__2024-03-23T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_dag.py', '--cfg-path', '/tmp/tmpqmdm_pxb']
+[2024-03-24T17:28:56.301+0000] {standard_task_runner.py:88} INFO - Job 8: Subtask import_tomtom_data_to_csv
+[2024-03-24T17:28:56.441+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-24T17:28:56.679+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [running]> on host 77fbfb9df273
+[2024-03-24T17:28:57.222+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom' AIRFLOW_CTX_TASK_ID='import_tomtom_data_to_csv' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-23T00:00:00+00:00'
+[2024-03-24T17:28:57.232+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-24T17:28:57.238+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_ingestion.py --date 2024-03-23']
+[2024-03-24T17:28:57.312+0000] {subprocess.py:86} INFO - Output:
+[2024-03-24T17:29:04.786+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-24T17:29:04.907+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom, task_id=import_tomtom_data_to_csv, execution_date=20240323T000000, start_date=20240324T172856, end_date=20240324T172904
+[2024-03-24T17:29:05.081+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-24T17:29:05.216+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-03-26T04:36:42.610+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-26T04:36:42.671+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-26T04:36:42.675+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-26T04:36:42.870+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): import_tomtom_data_to_csv> on 2024-03-23 00:00:00+00:00
+[2024-03-26T04:36:42.904+0000] {standard_task_runner.py:60} INFO - Started process 280 to run task
+[2024-03-26T04:36:43.060+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom', 'import_tomtom_data_to_csv', 'scheduled__2024-03-23T00:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_dag.py', '--cfg-path', '/tmp/tmp_n2cau7t']
+[2024-03-26T04:36:43.126+0000] {standard_task_runner.py:88} INFO - Job 6: Subtask import_tomtom_data_to_csv
+[2024-03-26T04:36:43.360+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-26T04:36:43.773+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [running]> on host f4350bf987d3
+[2024-03-26T04:36:44.220+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom' AIRFLOW_CTX_TASK_ID='import_tomtom_data_to_csv' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-23T00:00:00+00:00'
+[2024-03-26T04:36:44.223+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-26T04:36:44.225+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_ingestion.py --date 2024-03-23']
+[2024-03-26T04:36:44.313+0000] {subprocess.py:86} INFO - Output:
+[2024-03-26T04:36:53.375+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-26T04:36:53.574+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom, task_id=import_tomtom_data_to_csv, execution_date=20240323T000000, start_date=20240326T043642, end_date=20240326T043653
+[2024-03-26T04:36:53.754+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-26T04:36:53.899+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-26T05:02:57.570+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-26T05:02:57.617+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-26T05:02:57.624+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-26T05:02:57.791+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): import_tomtom_data_to_csv> on 2024-03-23 00:00:00+00:00
+[2024-03-26T05:02:57.891+0000] {standard_task_runner.py:60} INFO - Started process 275 to run task
+[2024-03-26T05:02:57.943+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom', 'import_tomtom_data_to_csv', 'scheduled__2024-03-23T00:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_dag.py', '--cfg-path', '/tmp/tmp7b97msoa']
+[2024-03-26T05:02:58.020+0000] {standard_task_runner.py:88} INFO - Job 6: Subtask import_tomtom_data_to_csv
+[2024-03-26T05:02:58.255+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-26T05:02:58.697+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [running]> on host 2d9dc956d0da
+[2024-03-26T05:02:59.219+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom' AIRFLOW_CTX_TASK_ID='import_tomtom_data_to_csv' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-23T00:00:00+00:00'
+[2024-03-26T05:02:59.244+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-26T05:02:59.257+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_ingestion.py --date 2024-03-23']
+[2024-03-26T05:02:59.328+0000] {subprocess.py:86} INFO - Output:
+[2024-03-26T05:03:07.201+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-26T05:03:07.502+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom, task_id=import_tomtom_data_to_csv, execution_date=20240323T000000, start_date=20240326T050257, end_date=20240326T050307
+[2024-03-26T05:03:07.684+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-26T05:03:07.973+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-03-27T02:05:31.962+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-27T02:05:31.989+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-27T02:05:31.994+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-27T02:05:32.078+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): import_tomtom_data_to_csv> on 2024-03-23 00:00:00+00:00
+[2024-03-27T02:05:32.126+0000] {standard_task_runner.py:60} INFO - Started process 261 to run task
+[2024-03-27T02:05:32.182+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom', 'import_tomtom_data_to_csv', 'scheduled__2024-03-23T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_dag.py', '--cfg-path', '/tmp/tmpt5y7750p']
+[2024-03-27T02:05:32.224+0000] {standard_task_runner.py:88} INFO - Job 4: Subtask import_tomtom_data_to_csv
+[2024-03-27T02:05:32.469+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-27T02:05:33.221+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [running]> on host 81b1c16c3e11
+[2024-03-27T02:05:34.576+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom' AIRFLOW_CTX_TASK_ID='import_tomtom_data_to_csv' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-23T00:00:00+00:00'
+[2024-03-27T02:05:34.601+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-27T02:05:34.609+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_ingestion.py --date 2024-03-23']
+[2024-03-27T02:05:34.852+0000] {subprocess.py:86} INFO - Output:
+[2024-03-27T02:05:53.985+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-27T02:05:54.788+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom, task_id=import_tomtom_data_to_csv, execution_date=20240323T000000, start_date=20240327T020531, end_date=20240327T020554
+[2024-03-27T02:05:55.067+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-27T02:05:55.440+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-03-27T02:42:08.655+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-27T02:42:08.720+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-27T02:42:08.738+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-27T02:42:08.960+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): import_tomtom_data_to_csv> on 2024-03-23 00:00:00+00:00
+[2024-03-27T02:42:08.973+0000] {standard_task_runner.py:60} INFO - Started process 266 to run task
+[2024-03-27T02:42:08.985+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom', 'import_tomtom_data_to_csv', 'scheduled__2024-03-23T00:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_dag.py', '--cfg-path', '/tmp/tmpu6unveot']
+[2024-03-27T02:42:08.998+0000] {standard_task_runner.py:88} INFO - Job 5: Subtask import_tomtom_data_to_csv
+[2024-03-27T02:42:09.141+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-27T02:42:09.406+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [running]> on host c1d14084e0e9
+[2024-03-27T02:42:09.875+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom' AIRFLOW_CTX_TASK_ID='import_tomtom_data_to_csv' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-23T00:00:00+00:00'
+[2024-03-27T02:42:09.882+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-27T02:42:09.886+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_ingestion.py --date 2024-03-23']
+[2024-03-27T02:42:09.951+0000] {subprocess.py:86} INFO - Output:
+[2024-03-27T02:42:17.315+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-27T02:42:17.477+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom, task_id=import_tomtom_data_to_csv, execution_date=20240323T000000, start_date=20240327T024208, end_date=20240327T024217
+[2024-03-27T02:42:17.584+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-27T02:42:17.646+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-03-27T19:26:08.668+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-27T19:26:08.796+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-27T19:26:08.799+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-27T19:26:09.224+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): import_tomtom_data_to_csv> on 2024-03-23 00:00:00+00:00
+[2024-03-27T19:26:09.252+0000] {standard_task_runner.py:60} INFO - Started process 297 to run task
+[2024-03-27T19:26:09.307+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom', 'import_tomtom_data_to_csv', 'scheduled__2024-03-23T00:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_dag.py', '--cfg-path', '/tmp/tmp77i9gh_k']
+[2024-03-27T19:26:09.321+0000] {standard_task_runner.py:88} INFO - Job 5: Subtask import_tomtom_data_to_csv
+[2024-03-27T19:26:09.622+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-27T19:26:10.070+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [running]> on host a178f5bbaa10
+[2024-03-27T19:26:11.074+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom' AIRFLOW_CTX_TASK_ID='import_tomtom_data_to_csv' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-23T00:00:00+00:00'
+[2024-03-27T19:26:11.087+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-27T19:26:11.091+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_ingestion.py --date 2024-03-23']
+[2024-03-27T19:26:11.160+0000] {subprocess.py:86} INFO - Output:
+[2024-03-27T19:26:19.293+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-27T19:26:19.390+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom, task_id=import_tomtom_data_to_csv, execution_date=20240323T000000, start_date=20240327T192608, end_date=20240327T192619
+[2024-03-27T19:26:19.470+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-27T19:26:19.544+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-03-29T01:37:14.923+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-29T01:37:14.982+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-29T01:37:14.991+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-29T01:37:15.063+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): import_tomtom_data_to_csv> on 2024-03-23 00:00:00+00:00
+[2024-03-29T01:37:15.107+0000] {standard_task_runner.py:60} INFO - Started process 295 to run task
+[2024-03-29T01:37:15.168+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom', 'import_tomtom_data_to_csv', 'scheduled__2024-03-23T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_dag.py', '--cfg-path', '/tmp/tmp_vtd1b0o']
+[2024-03-29T01:37:15.268+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask import_tomtom_data_to_csv
+[2024-03-29T01:37:15.492+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-29T01:37:16.196+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [running]> on host 48a08da0e38c
+[2024-03-29T01:37:17.765+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom' AIRFLOW_CTX_TASK_ID='import_tomtom_data_to_csv' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-23T00:00:00+00:00'
+[2024-03-29T01:37:17.783+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-29T01:37:17.796+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_ingestion.py --date 2024-03-23']
+[2024-03-29T01:37:17.882+0000] {subprocess.py:86} INFO - Output:
+[2024-03-29T01:37:29.797+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-29T01:37:29.980+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom, task_id=import_tomtom_data_to_csv, execution_date=20240323T000000, start_date=20240329T013714, end_date=20240329T013729
+[2024-03-29T01:37:30.169+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-29T01:37:30.256+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-03-29T02:18:06.829+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-29T02:18:06.866+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-29T02:18:06.873+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-29T02:18:07.006+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): import_tomtom_data_to_csv> on 2024-03-23 00:00:00+00:00
+[2024-03-29T02:18:07.048+0000] {standard_task_runner.py:60} INFO - Started process 293 to run task
+[2024-03-29T02:18:07.171+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom', 'import_tomtom_data_to_csv', 'scheduled__2024-03-23T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_dag.py', '--cfg-path', '/tmp/tmpdxytqoyi']
+[2024-03-29T02:18:07.180+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask import_tomtom_data_to_csv
+[2024-03-29T02:18:07.470+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-29T02:18:07.975+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom.import_tomtom_data_to_csv scheduled__2024-03-23T00:00:00+00:00 [running]> on host ca95eed9b9dd
+[2024-03-29T02:18:08.634+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom' AIRFLOW_CTX_TASK_ID='import_tomtom_data_to_csv' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-23T00:00:00+00:00'
+[2024-03-29T02:18:08.659+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-29T02:18:08.667+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_ingestion.py --date 2024-03-23']
+[2024-03-29T02:18:08.738+0000] {subprocess.py:86} INFO - Output:
+[2024-03-29T02:18:15.584+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-29T02:18:15.738+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom, task_id=import_tomtom_data_to_csv, execution_date=20240323T000000, start_date=20240329T021806, end_date=20240329T021815
+[2024-03-29T02:18:15.871+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-29T02:18:16.071+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

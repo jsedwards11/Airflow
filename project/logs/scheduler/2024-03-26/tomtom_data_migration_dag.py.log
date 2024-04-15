@@ -1,0 +1,479 @@
+[2024-03-26T04:33:24.872+0000] {processor.py:161} INFO - Started process (PID=170) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:33:24.883+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:33:24.892+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:33:24.890+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:33:24.980+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:33:24.973+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_data_migration_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_data_migration_dag.py", line 27, in <module>
+    bash_command='python /opt/airflow/dags/tomtom_data_migration.py --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2024-03-26T04:33:24.988+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:33:25.020+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.169 seconds
+[2024-03-26T04:33:56.065+0000] {processor.py:161} INFO - Started process (PID=185) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:33:56.073+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:33:56.085+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:33:56.085+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:33:56.337+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:33:56.319+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_data_migration_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_data_migration_dag.py", line 27, in <module>
+    bash_command='python /opt/airflow/dags/tomtom_data_migration.py --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2024-03-26T04:33:56.345+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:33:56.412+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.369 seconds
+[2024-03-26T04:34:26.718+0000] {processor.py:161} INFO - Started process (PID=199) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:34:26.726+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:34:26.739+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:34:26.735+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:34:26.851+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:34:26.845+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_data_migration_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_data_migration_dag.py", line 27, in <module>
+    bash_command='python /opt/airflow/dags/tomtom_data_migration.py --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2024-03-26T04:34:26.858+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:34:26.955+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.269 seconds
+[2024-03-26T04:34:57.575+0000] {processor.py:161} INFO - Started process (PID=215) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:34:57.581+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:34:57.589+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:34:57.588+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:34:57.732+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:34:58.099+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:34:58.098+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:tomtom_data_migration
+[2024-03-26T04:34:58.119+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:34:58.119+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:tomtom_data_migration
+[2024-03-26T04:34:58.134+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:34:58.134+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:tomtom_data_migration
+[2024-03-26T04:34:58.137+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:34:58.137+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:34:58.162+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:34:58.162+0000] {dag.py:3069} INFO - Creating ORM DAG for tomtom_data_migration
+[2024-03-26T04:34:58.180+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:34:58.179+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to 2024-01-01 00:00:00+00:00, run_after=2024-01-01 00:00:00+00:00
+[2024-03-26T04:34:58.223+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.655 seconds
+[2024-03-26T04:35:28.753+0000] {processor.py:161} INFO - Started process (PID=234) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:35:28.756+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:35:28.759+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:35:28.758+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:35:28.844+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:35:28.873+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:35:28.872+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:35:28.999+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:35:28.998+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:35:29.058+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.315 seconds
+[2024-03-26T04:35:59.755+0000] {processor.py:161} INFO - Started process (PID=249) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:35:59.762+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:35:59.776+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:35:59.771+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:35:59.891+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:35:59.957+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:35:59.957+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:36:00.062+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:36:00.061+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:36:00.107+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.365 seconds
+[2024-03-26T04:36:30.466+0000] {processor.py:161} INFO - Started process (PID=262) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:36:30.469+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:36:30.474+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:36:30.473+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:36:30.576+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:36:30.615+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:36:30.615+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:36:30.676+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:36:30.675+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:36:30.738+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.285 seconds
+[2024-03-26T04:37:01.491+0000] {processor.py:161} INFO - Started process (PID=334) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:37:01.506+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:37:01.528+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:37:01.527+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:37:01.678+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:37:01.763+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:37:01.763+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:37:01.978+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:37:01.973+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:37:02.084+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.636 seconds
+[2024-03-26T04:37:32.514+0000] {processor.py:161} INFO - Started process (PID=353) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:37:32.518+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:37:32.523+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:37:32.522+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:37:32.625+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:37:32.664+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:37:32.663+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:37:32.717+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:37:32.716+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:37:32.760+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.255 seconds
+[2024-03-26T04:38:03.141+0000] {processor.py:161} INFO - Started process (PID=367) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:38:03.145+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:38:03.153+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:38:03.151+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:38:03.273+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:38:03.313+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:38:03.313+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:38:03.371+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:38:03.371+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:38:03.476+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.351 seconds
+[2024-03-26T04:38:34.732+0000] {processor.py:161} INFO - Started process (PID=384) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:38:34.737+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:38:34.764+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:38:34.763+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:38:35.095+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:38:35.186+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:38:35.185+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:38:35.262+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:38:35.262+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:38:35.315+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.594 seconds
+[2024-03-26T04:39:05.654+0000] {processor.py:161} INFO - Started process (PID=399) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:39:05.659+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:39:05.662+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:39:05.662+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:39:05.791+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:39:05.829+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:39:05.829+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:39:05.886+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:39:05.886+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:39:05.944+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.296 seconds
+[2024-03-26T04:39:36.393+0000] {processor.py:161} INFO - Started process (PID=414) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:39:36.404+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:39:36.407+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:39:36.406+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:39:36.551+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:39:36.587+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:39:36.587+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:39:36.642+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:39:36.642+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:39:36.692+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.305 seconds
+[2024-03-26T04:40:07.070+0000] {processor.py:161} INFO - Started process (PID=427) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:40:07.080+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:40:07.089+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:40:07.087+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:40:07.197+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:40:07.269+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:40:07.268+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:40:07.395+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:40:07.395+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:40:07.508+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.452 seconds
+[2024-03-26T04:40:37.919+0000] {processor.py:161} INFO - Started process (PID=442) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:40:37.923+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:40:37.926+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:40:37.926+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:40:38.058+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:40:38.107+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:40:38.107+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:40:38.156+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:40:38.156+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:40:38.204+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.291 seconds
+[2024-03-26T04:41:08.743+0000] {processor.py:161} INFO - Started process (PID=459) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:41:08.748+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:41:08.761+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:41:08.760+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:41:08.988+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:41:09.038+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:41:09.038+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:41:09.081+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:41:09.080+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:41:09.153+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.459 seconds
+[2024-03-26T04:41:39.729+0000] {processor.py:161} INFO - Started process (PID=473) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:41:39.733+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:41:39.736+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:41:39.736+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:41:39.817+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:41:39.850+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:41:39.849+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:41:39.917+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:41:39.916+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:41:39.958+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.236 seconds
+[2024-03-26T04:42:10.517+0000] {processor.py:161} INFO - Started process (PID=489) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:42:10.520+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:42:10.524+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:42:10.523+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:42:10.631+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:42:10.666+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:42:10.665+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:42:10.719+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:42:10.718+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:42:10.777+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.269 seconds
+[2024-03-26T04:42:41.258+0000] {processor.py:161} INFO - Started process (PID=504) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:42:41.295+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:42:41.302+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:42:41.300+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:42:41.896+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:42:41.952+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:42:41.952+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:42:42.011+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:42:42.010+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:42:42.230+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.985 seconds
+[2024-03-26T04:43:12.590+0000] {processor.py:161} INFO - Started process (PID=517) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:43:12.595+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:43:12.602+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:43:12.600+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:43:12.690+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:43:12.720+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:43:12.720+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:43:12.759+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:43:12.759+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:43:12.798+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.231 seconds
+[2024-03-26T04:43:43.389+0000] {processor.py:161} INFO - Started process (PID=534) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:43:43.397+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:43:43.405+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:43:43.404+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:43:43.526+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:43:43.591+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:43:43.590+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:43:43.666+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:43:43.666+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:43:43.725+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.343 seconds
+[2024-03-26T04:44:14.174+0000] {processor.py:161} INFO - Started process (PID=549) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:44:14.176+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:44:14.179+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:44:14.179+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:44:14.277+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:44:14.322+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:44:14.322+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:44:14.384+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:44:14.382+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:44:14.443+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.278 seconds
+[2024-03-26T04:44:44.903+0000] {processor.py:161} INFO - Started process (PID=563) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:44:44.908+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:44:44.914+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:44:44.912+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:44:45.019+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:44:45.068+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:44:45.068+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:44:45.122+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:44:45.121+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:44:45.173+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.286 seconds
+[2024-03-26T04:45:15.632+0000] {processor.py:161} INFO - Started process (PID=579) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:45:15.680+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:45:15.705+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:45:15.697+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:45:15.862+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:45:16.069+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:45:16.069+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:45:16.162+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:45:16.161+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:45:16.255+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.644 seconds
+[2024-03-26T04:45:46.963+0000] {processor.py:161} INFO - Started process (PID=594) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:45:46.966+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:45:46.970+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:45:46.970+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:45:47.040+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:45:47.077+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:45:47.077+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:45:47.116+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:45:47.115+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:45:47.148+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.191 seconds
+[2024-03-26T04:46:17.580+0000] {processor.py:161} INFO - Started process (PID=609) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:46:17.587+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:46:17.590+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:46:17.590+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:46:17.697+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:46:17.757+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:46:17.757+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:46:17.794+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:46:17.793+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:46:17.834+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.261 seconds
+[2024-03-26T04:46:48.133+0000] {processor.py:161} INFO - Started process (PID=622) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:46:48.136+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:46:48.139+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:46:48.139+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:46:48.227+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:46:48.254+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:46:48.254+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:46:48.304+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:46:48.303+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:46:48.337+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.211 seconds
+[2024-03-26T04:47:18.752+0000] {processor.py:161} INFO - Started process (PID=639) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:47:18.755+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:47:18.762+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:47:18.759+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:47:18.933+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:47:19.033+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:47:19.033+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:47:19.098+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:47:19.097+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:47:19.150+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.402 seconds
+[2024-03-26T04:47:50.245+0000] {processor.py:161} INFO - Started process (PID=653) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:47:50.251+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:47:50.257+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:47:50.256+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:47:50.433+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:47:50.518+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:47:50.517+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:47:50.621+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:47:50.621+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:47:50.675+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.437 seconds
+[2024-03-26T04:48:21.159+0000] {processor.py:161} INFO - Started process (PID=668) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:48:21.170+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:48:21.175+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:48:21.174+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:48:21.289+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:48:21.341+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:48:21.340+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:48:21.420+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:48:21.420+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:48:21.485+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.370 seconds
+[2024-03-26T04:48:52.016+0000] {processor.py:161} INFO - Started process (PID=683) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:48:52.019+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:48:52.027+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:48:52.026+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:48:52.105+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:48:52.133+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:48:52.133+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:48:52.178+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:48:52.177+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:48:52.211+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.200 seconds
+[2024-03-26T04:49:22.701+0000] {processor.py:161} INFO - Started process (PID=699) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:49:22.705+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:49:22.714+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:49:22.713+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:49:22.820+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:49:22.857+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:49:22.857+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:49:22.898+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:49:22.898+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:49:22.946+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.260 seconds
+[2024-03-26T04:49:53.319+0000] {processor.py:161} INFO - Started process (PID=714) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:49:53.325+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:49:53.331+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:49:53.330+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:49:53.432+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:49:53.491+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:49:53.490+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:49:53.534+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:49:53.533+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:49:53.605+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.306 seconds
+[2024-03-26T04:50:24.032+0000] {processor.py:161} INFO - Started process (PID=729) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:50:24.036+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:50:24.042+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:50:24.040+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:50:24.138+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:50:24.168+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:50:24.168+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:50:24.222+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:50:24.222+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:50:24.270+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.248 seconds
+[2024-03-26T04:50:54.686+0000] {processor.py:161} INFO - Started process (PID=744) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:50:54.706+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:50:54.725+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:50:54.722+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:50:54.931+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:50:55.025+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:50:55.024+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:50:55.141+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:50:55.141+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:50:55.187+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.512 seconds
+[2024-03-26T04:51:25.593+0000] {processor.py:161} INFO - Started process (PID=759) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:51:25.597+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:51:25.602+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:51:25.601+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:51:25.689+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:51:25.738+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:51:25.737+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:51:25.968+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:51:25.967+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:51:26.042+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.463 seconds
+[2024-03-26T04:51:56.383+0000] {processor.py:161} INFO - Started process (PID=772) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:51:56.385+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:51:56.398+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:51:56.395+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:51:56.498+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:51:56.536+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:51:56.536+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:51:56.607+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:51:56.607+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:51:56.649+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.272 seconds
+[2024-03-26T04:52:26.957+0000] {processor.py:161} INFO - Started process (PID=789) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:52:26.961+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:52:26.964+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:52:26.963+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:52:27.049+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:52:27.091+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:52:27.091+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:52:27.137+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:52:27.137+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:52:27.184+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.232 seconds
+[2024-03-26T04:52:57.552+0000] {processor.py:161} INFO - Started process (PID=804) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:52:57.555+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:52:57.561+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:52:57.560+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:52:57.624+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:52:57.671+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:52:57.670+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:52:57.749+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:52:57.748+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:52:57.806+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.266 seconds
+[2024-03-26T04:53:28.341+0000] {processor.py:161} INFO - Started process (PID=819) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:53:28.352+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:53:28.355+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:53:28.354+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:53:28.417+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:53:28.455+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:53:28.454+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:53:28.513+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:53:28.513+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:53:28.546+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.209 seconds
+[2024-03-26T04:53:58.941+0000] {processor.py:161} INFO - Started process (PID=834) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:53:58.950+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:53:58.953+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:53:58.953+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:53:59.031+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:53:59.059+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:53:59.059+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:53:59.104+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:53:59.103+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:53:59.164+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.228 seconds
+[2024-03-26T04:54:29.681+0000] {processor.py:161} INFO - Started process (PID=849) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:54:29.689+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:54:29.703+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:54:29.701+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:54:29.962+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:54:30.006+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:54:30.005+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:54:30.116+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:54:30.115+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:54:30.183+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.531 seconds
+[2024-03-26T04:55:00.551+0000] {processor.py:161} INFO - Started process (PID=863) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:55:00.554+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:55:00.557+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:55:00.556+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:55:00.625+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:55:00.656+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:55:00.656+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:55:00.702+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:55:00.702+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:55:00.737+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.192 seconds
+[2024-03-26T04:55:31.128+0000] {processor.py:161} INFO - Started process (PID=878) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:55:31.131+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:55:31.134+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:55:31.134+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:55:31.227+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:55:31.254+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:55:31.254+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:55:31.288+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:55:31.288+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:55:31.323+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.200 seconds
+[2024-03-26T04:56:01.816+0000] {processor.py:161} INFO - Started process (PID=893) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:56:01.828+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:56:01.836+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:56:01.833+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:56:01.937+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:56:01.978+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:56:01.978+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:56:02.023+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:56:02.023+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:56:02.059+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.287 seconds
+[2024-03-26T04:56:32.652+0000] {processor.py:161} INFO - Started process (PID=914) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:56:32.656+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:56:32.662+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:56:32.661+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:56:32.747+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:56:32.784+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:56:32.784+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:56:32.827+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:56:32.826+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:56:32.866+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.229 seconds
+[2024-03-26T04:57:03.211+0000] {processor.py:161} INFO - Started process (PID=927) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:57:03.216+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:57:03.226+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:57:03.220+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:57:03.313+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:57:03.393+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:57:03.392+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:57:03.469+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:57:03.468+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:57:03.514+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.325 seconds
+[2024-03-26T04:57:33.965+0000] {processor.py:161} INFO - Started process (PID=943) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:57:33.973+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:57:33.979+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:57:33.976+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:57:34.153+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:57:34.271+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:57:34.271+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T04:57:34.359+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:57:34.359+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T04:57:34.477+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.520 seconds
+[2024-03-26T04:59:50.876+0000] {processor.py:161} INFO - Started process (PID=170) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:59:50.885+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T04:59:50.890+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:59:50.889+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:59:50.997+0000] {logging_mixin.py:188} INFO - [2024-03-26T04:59:50.992+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_data_migration_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_data_migration_dag.py", line 27, in <module>
+    bash_command='python /opt/airflow/dags/tomtom_data_migration.py --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2024-03-26T04:59:51.001+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T04:59:51.027+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.157 seconds
+[2024-03-26T05:00:21.470+0000] {processor.py:161} INFO - Started process (PID=183) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:00:21.475+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T05:00:21.479+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:00:21.478+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:00:21.574+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:00:21.569+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_data_migration_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_data_migration_dag.py", line 27, in <module>
+    bash_command='python /opt/airflow/dags/tomtom_data_migration.py --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2024-03-26T05:00:21.577+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:00:21.601+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.136 seconds
+[2024-03-26T05:00:53.594+0000] {processor.py:161} INFO - Started process (PID=198) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:00:53.606+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T05:00:53.616+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:00:53.615+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:00:53.745+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:00:53.738+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_data_migration_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_data_migration_dag.py", line 27, in <module>
+    bash_command='python /opt/airflow/dags/tomtom_data_migration.py --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2024-03-26T05:00:53.751+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:00:53.782+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.202 seconds
+[2024-03-26T05:01:23.961+0000] {processor.py:161} INFO - Started process (PID=215) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:01:23.968+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T05:01:23.976+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:01:23.975+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:01:24.065+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:01:24.059+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_data_migration_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_data_migration_dag.py", line 27, in <module>
+    bash_command='python /opt/airflow/dags/tomtom_data_migration.py --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2024-03-26T05:01:24.069+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:01:24.096+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.149 seconds
+[2024-03-26T05:01:54.643+0000] {processor.py:161} INFO - Started process (PID=228) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:01:54.646+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T05:01:54.649+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:01:54.649+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:01:54.740+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:01:54.737+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_data_migration_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_data_migration_dag.py", line 27, in <module>
+    bash_command='python /opt/airflow/dags/tomtom_data_migration.py --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2024-03-26T05:01:54.744+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:01:54.761+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.123 seconds
+[2024-03-26T05:02:25.337+0000] {processor.py:161} INFO - Started process (PID=243) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:02:25.340+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T05:02:25.344+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:02:25.343+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:02:25.419+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:02:25.708+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:02:25.707+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:tomtom_data_migration
+[2024-03-26T05:02:25.732+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:02:25.732+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:tomtom_data_migration
+[2024-03-26T05:02:25.766+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:02:25.765+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:tomtom_data_migration
+[2024-03-26T05:02:25.770+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:02:25.769+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T05:02:25.812+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:02:25.812+0000] {dag.py:3069} INFO - Creating ORM DAG for tomtom_data_migration
+[2024-03-26T05:02:25.846+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:02:25.845+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to 2024-01-01 00:00:00+00:00, run_after=2024-01-01 00:00:00+00:00
+[2024-03-26T05:02:25.905+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.575 seconds
+[2024-03-26T05:02:57.625+0000] {processor.py:161} INFO - Started process (PID=272) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:02:57.647+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T05:02:57.653+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:02:57.652+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:02:58.167+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:02:58.368+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:02:58.368+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T05:02:58.656+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:02:58.655+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T05:02:58.861+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 1.314 seconds
+[2024-03-26T05:03:29.281+0000] {processor.py:161} INFO - Started process (PID=336) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:03:29.285+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T05:03:29.288+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:03:29.287+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:03:29.358+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:03:29.397+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:03:29.397+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T05:03:29.443+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:03:29.442+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T05:03:29.498+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.222 seconds
+[2024-03-26T05:03:59.863+0000] {processor.py:161} INFO - Started process (PID=350) to work on /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:03:59.867+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tomtom_data_migration_dag.py for tasks to queue
+[2024-03-26T05:03:59.870+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:03:59.870+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:03:59.933+0000] {processor.py:840} INFO - DAG(s) 'tomtom_data_migration' retrieved from /opt/airflow/dags/tomtom_data_migration_dag.py
+[2024-03-26T05:03:59.986+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:03:59.986+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T05:04:00.042+0000] {logging_mixin.py:188} INFO - [2024-03-26T05:04:00.040+0000] {dag.py:3834} INFO - Setting next_dagrun for tomtom_data_migration to None, run_after=None
+[2024-03-26T05:04:00.093+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tomtom_data_migration_dag.py took 0.245 seconds

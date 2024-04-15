@@ -1,0 +1,306 @@
+[2024-03-24T16:28:53.852+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-24T16:28:53.877+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-24T16:28:53.880+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-24T16:28:53.913+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-03-24T16:28:53.923+0000] {standard_task_runner.py:60} INFO - Started process 312 to run task
+[2024-03-24T16:28:53.934+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmppt6g8wv0']
+[2024-03-24T16:28:53.939+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-03-24T16:28:53.975+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-24T16:28:54.069+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host cc0f04bb20f0
+[2024-03-24T16:28:54.344+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-03-24T16:28:54.348+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-24T16:28:54.351+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-03-24T16:28:54.369+0000] {subprocess.py:86} INFO - Output:
+[2024-03-24T16:28:55.423+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-24T16:28:55.539+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240324T162853, end_date=20240324T162855
+[2024-03-24T16:28:55.588+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-24T16:28:55.618+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-24T16:50:09.245+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-24T16:50:09.261+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-24T16:50:09.263+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-24T16:50:09.287+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-03-24T16:50:09.296+0000] {standard_task_runner.py:60} INFO - Started process 252 to run task
+[2024-03-24T16:50:09.303+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmp05fi_nta']
+[2024-03-24T16:50:09.306+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-03-24T16:50:09.338+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-24T16:50:09.404+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host 1ef4dfe662c6
+[2024-03-24T16:50:09.565+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-03-24T16:50:09.569+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-24T16:50:09.572+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-03-24T16:50:09.590+0000] {subprocess.py:86} INFO - Output:
+[2024-03-24T16:50:10.087+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-24T16:50:10.132+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240324T165009, end_date=20240324T165010
+[2024-03-24T16:50:10.183+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-24T16:50:10.213+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-24T17:28:34.374+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-24T17:28:34.393+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-24T17:28:34.395+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-24T17:28:34.421+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-03-24T17:28:34.432+0000] {standard_task_runner.py:60} INFO - Started process 283 to run task
+[2024-03-24T17:28:34.439+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmp42r92wsb']
+[2024-03-24T17:28:34.444+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-03-24T17:28:34.476+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-24T17:28:34.550+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host 77fbfb9df273
+[2024-03-24T17:28:34.718+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-03-24T17:28:34.724+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-24T17:28:34.727+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-03-24T17:28:34.757+0000] {subprocess.py:86} INFO - Output:
+[2024-03-24T17:28:35.372+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-24T17:28:35.423+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240324T172834, end_date=20240324T172835
+[2024-03-24T17:28:35.466+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-24T17:28:35.495+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-26T04:35:19.206+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-26T04:35:19.229+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-26T04:35:19.232+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-26T04:35:19.261+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-03-26T04:35:19.272+0000] {standard_task_runner.py:60} INFO - Started process 223 to run task
+[2024-03-26T04:35:19.281+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmphw5f1emh']
+[2024-03-26T04:35:19.285+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-03-26T04:35:19.317+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-26T04:35:19.388+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host f4350bf987d3
+[2024-03-26T04:35:19.534+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-03-26T04:35:19.538+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-26T04:35:19.541+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-03-26T04:35:19.557+0000] {subprocess.py:86} INFO - Output:
+[2024-03-26T04:35:20.150+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-26T04:35:20.197+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240326T043519, end_date=20240326T043520
+[2024-03-26T04:35:20.266+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-26T04:35:20.297+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-26T05:02:36.263+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-26T05:02:36.294+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-26T05:02:36.296+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-26T05:02:36.333+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-03-26T05:02:36.345+0000] {standard_task_runner.py:60} INFO - Started process 251 to run task
+[2024-03-26T05:02:36.361+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmpf1przaoz']
+[2024-03-26T05:02:36.368+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-03-26T05:02:36.412+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-26T05:02:36.520+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host 2d9dc956d0da
+[2024-03-26T05:02:36.968+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-03-26T05:02:36.978+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-26T05:02:36.981+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-03-26T05:02:37.027+0000] {subprocess.py:86} INFO - Output:
+[2024-03-26T05:02:37.647+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-26T05:02:37.700+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240326T050236, end_date=20240326T050237
+[2024-03-26T05:02:37.775+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-26T05:02:37.823+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-27T02:05:23.825+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-27T02:05:23.844+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-27T02:05:23.846+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-27T02:05:23.868+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-03-27T02:05:23.874+0000] {standard_task_runner.py:60} INFO - Started process 237 to run task
+[2024-03-27T02:05:23.879+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmp00i9oxfk']
+[2024-03-27T02:05:23.883+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-03-27T02:05:23.913+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-27T02:05:24.005+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host 81b1c16c3e11
+[2024-03-27T02:05:24.185+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-03-27T02:05:24.189+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-27T02:05:24.191+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-03-27T02:05:24.208+0000] {subprocess.py:86} INFO - Output:
+[2024-03-27T02:05:24.903+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-27T02:05:24.947+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240327T020523, end_date=20240327T020524
+[2024-03-27T02:05:24.985+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-27T02:05:25.013+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-27T02:41:46.419+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-27T02:41:46.438+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-27T02:41:46.441+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-27T02:41:46.475+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-03-27T02:41:46.489+0000] {standard_task_runner.py:60} INFO - Started process 239 to run task
+[2024-03-27T02:41:46.496+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmpzeq71kk7']
+[2024-03-27T02:41:46.502+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-03-27T02:41:46.546+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-27T02:41:46.623+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host c1d14084e0e9
+[2024-03-27T02:41:46.841+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-03-27T02:41:46.856+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-27T02:41:46.862+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-03-27T02:41:46.880+0000] {subprocess.py:86} INFO - Output:
+[2024-03-27T02:41:47.505+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-27T02:41:47.566+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240327T024146, end_date=20240327T024147
+[2024-03-27T02:41:47.642+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-27T02:41:47.672+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-27T19:25:53.774+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-27T19:25:53.793+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-27T19:25:53.796+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-27T19:25:53.830+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-03-27T19:25:53.842+0000] {standard_task_runner.py:60} INFO - Started process 286 to run task
+[2024-03-27T19:25:53.850+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmpcditj15s']
+[2024-03-27T19:25:53.857+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-03-27T19:25:53.901+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-27T19:25:53.977+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host a178f5bbaa10
+[2024-03-27T19:25:54.158+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-03-27T19:25:54.165+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-27T19:25:54.169+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-03-27T19:25:54.186+0000] {subprocess.py:86} INFO - Output:
+[2024-03-27T19:25:54.859+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-27T19:25:54.922+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240327T192553, end_date=20240327T192554
+[2024-03-27T19:25:54.994+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-27T19:25:55.029+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-29T01:37:04.589+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-29T01:37:04.614+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-29T01:37:04.623+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-29T01:37:04.674+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-03-29T01:37:04.691+0000] {standard_task_runner.py:60} INFO - Started process 284 to run task
+[2024-03-29T01:37:04.709+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmp8l66i6cc']
+[2024-03-29T01:37:04.728+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-03-29T01:37:04.806+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-29T01:37:04.925+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host 48a08da0e38c
+[2024-03-29T01:37:05.204+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-03-29T01:37:05.211+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-29T01:37:05.216+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-03-29T01:37:05.236+0000] {subprocess.py:86} INFO - Output:
+[2024-03-29T01:37:05.914+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-29T01:37:05.987+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240329T013704, end_date=20240329T013705
+[2024-03-29T01:37:06.077+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-29T01:37:06.117+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-29T02:18:00.162+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-29T02:18:00.181+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-29T02:18:00.184+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-29T02:18:00.220+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-03-29T02:18:00.231+0000] {standard_task_runner.py:60} INFO - Started process 286 to run task
+[2024-03-29T02:18:00.237+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmpm40rlnzt']
+[2024-03-29T02:18:00.243+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-03-29T02:18:00.287+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-29T02:18:00.366+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host ca95eed9b9dd
+[2024-03-29T02:18:00.542+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-03-29T02:18:00.549+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-29T02:18:00.553+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-03-29T02:18:00.571+0000] {subprocess.py:86} INFO - Output:
+[2024-03-29T02:18:01.268+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-29T02:18:01.328+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240329T021800, end_date=20240329T021801
+[2024-03-29T02:18:01.380+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-29T02:18:01.478+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-30T01:02:06.490+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-30T01:02:06.510+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-30T01:02:06.513+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-30T01:02:06.549+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-03-30T01:02:06.560+0000] {standard_task_runner.py:60} INFO - Started process 284 to run task
+[2024-03-30T01:02:06.566+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmpcgn2f5hd']
+[2024-03-30T01:02:06.573+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-03-30T01:02:06.623+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-30T01:02:06.701+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host 63c0a92b7fba
+[2024-03-30T01:02:06.864+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-03-30T01:02:06.870+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-30T01:02:06.873+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-03-30T01:02:06.892+0000] {subprocess.py:86} INFO - Output:
+[2024-03-30T01:02:07.549+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-30T01:02:07.610+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240330T010206, end_date=20240330T010207
+[2024-03-30T01:02:07.720+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-30T01:02:07.831+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-30T19:17:38.543+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-30T19:17:38.562+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-30T19:17:38.566+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-30T19:17:38.612+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-03-30T19:17:38.622+0000] {standard_task_runner.py:60} INFO - Started process 329 to run task
+[2024-03-30T19:17:38.630+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmph06s4r0d']
+[2024-03-30T19:17:38.637+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-03-30T19:17:38.684+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-30T19:17:38.760+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host 19ac4b08c681
+[2024-03-30T19:17:38.968+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-03-30T19:17:38.976+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-30T19:17:38.985+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-03-30T19:17:39.012+0000] {subprocess.py:86} INFO - Output:
+[2024-03-30T19:17:39.681+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-30T19:17:39.744+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240330T191738, end_date=20240330T191739
+[2024-03-30T19:17:39.830+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-30T19:17:39.862+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-31T23:52:52.774+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-31T23:52:52.799+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-03-31T23:52:52.803+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-31T23:52:52.848+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-03-31T23:52:52.861+0000] {standard_task_runner.py:60} INFO - Started process 240 to run task
+[2024-03-31T23:52:52.867+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmpzqi5lhm7']
+[2024-03-31T23:52:52.877+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-03-31T23:52:52.929+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-31T23:52:53.007+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host eb2a2a17d989
+[2024-03-31T23:52:53.217+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-03-31T23:52:53.227+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-31T23:52:53.232+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-03-31T23:52:53.254+0000] {subprocess.py:86} INFO - Output:
+[2024-03-31T23:52:54.032+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-31T23:52:54.094+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240331T235252, end_date=20240331T235254
+[2024-03-31T23:52:54.139+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-31T23:52:54.179+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-04-01T22:56:46.041+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-04-01T22:56:46.058+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-04-01T22:56:46.061+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-04-01T22:56:46.096+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-04-01T22:56:46.107+0000] {standard_task_runner.py:60} INFO - Started process 327 to run task
+[2024-04-01T22:56:46.113+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmpgru20pfu']
+[2024-04-01T22:56:46.119+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-04-01T22:56:46.167+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-04-01T22:56:46.245+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host eb2a2a17d989
+[2024-04-01T22:56:46.402+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-04-01T22:56:46.408+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T22:56:46.412+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-04-01T22:56:46.438+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T22:56:47.011+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-04-01T22:56:47.075+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240401T225646, end_date=20240401T225647
+[2024-04-01T22:56:47.138+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-01T22:56:47.170+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-04-01T23:28:56.298+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-04-01T23:28:56.316+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-04-01T23:28:56.319+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-04-01T23:28:56.354+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-04-01T23:28:56.365+0000] {standard_task_runner.py:60} INFO - Started process 270 to run task
+[2024-04-01T23:28:56.371+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmpu1ariarf']
+[2024-04-01T23:28:56.378+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-04-01T23:28:56.430+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-04-01T23:28:56.502+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host d1eaa10b3e27
+[2024-04-01T23:28:56.672+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-04-01T23:28:56.678+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T23:28:56.681+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-04-01T23:28:56.699+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T23:28:57.427+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-04-01T23:28:57.534+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240401T232856, end_date=20240401T232857
+[2024-04-01T23:28:57.611+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-01T23:28:57.646+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-04-01T23:39:22.150+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-04-01T23:39:22.168+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-04-01T23:39:22.172+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-04-01T23:39:22.208+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-04-01T23:39:22.218+0000] {standard_task_runner.py:60} INFO - Started process 225 to run task
+[2024-04-01T23:39:22.226+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmphacymm14']
+[2024-04-01T23:39:22.235+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-04-01T23:39:22.279+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-04-01T23:39:22.356+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host d0452b3aa12f
+[2024-04-01T23:39:22.528+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-04-01T23:39:22.535+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T23:39:22.538+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-04-01T23:39:22.556+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T23:39:23.120+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-04-01T23:39:23.176+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240401T233922, end_date=20240401T233923
+[2024-04-01T23:39:23.250+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-01T23:39:23.281+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-04-01T23:52:48.184+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-04-01T23:52:48.202+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-04-01T23:52:48.205+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-04-01T23:52:48.241+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-04-01T23:52:48.252+0000] {standard_task_runner.py:60} INFO - Started process 225 to run task
+[2024-04-01T23:52:48.261+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmp_rep73g7']
+[2024-04-01T23:52:48.268+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-04-01T23:52:48.329+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-04-01T23:52:48.533+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host 20ab91caeb49
+[2024-04-01T23:52:48.721+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-04-01T23:52:48.727+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T23:52:48.731+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-04-01T23:52:48.751+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T23:52:49.334+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-04-01T23:52:49.397+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240401T235248, end_date=20240401T235249
+[2024-04-01T23:52:49.460+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-01T23:52:49.502+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-04-02T21:26:17.245+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-04-02T21:26:17.262+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-04-02T21:26:17.265+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-04-02T21:26:17.298+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): tomtom_data_migration> on 2024-01-01 00:00:00+00:00
+[2024-04-02T21:26:17.306+0000] {standard_task_runner.py:60} INFO - Started process 254 to run task
+[2024-04-02T21:26:17.312+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'tomtom_data_migration', 'tomtom_data_migration', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tomtom_data_migration_dag.py', '--cfg-path', '/tmp/tmpgxtvy7ob']
+[2024-04-02T21:26:17.317+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask tomtom_data_migration
+[2024-04-02T21:26:17.358+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-04-02T21:26:17.426+0000] {task_command.py:423} INFO - Running <TaskInstance: tomtom_data_migration.tomtom_data_migration scheduled__2024-01-01T00:00:00+00:00 [running]> on host e8080c3449d7
+[2024-04-02T21:26:17.675+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tomtom_data_migration' AIRFLOW_CTX_TASK_ID='tomtom_data_migration' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-04-02T21:26:17.684+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-02T21:26:17.689+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/tomtom_data_migration.py --connection postgresql+psycopg2://***:***@postgres/***']
+[2024-04-02T21:26:17.708+0000] {subprocess.py:86} INFO - Output:
+[2024-04-02T21:26:18.573+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-04-02T21:26:18.659+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=tomtom_data_migration, task_id=tomtom_data_migration, execution_date=20240101T000000, start_date=20240402T212617, end_date=20240402T212618
+[2024-04-02T21:26:18.750+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-02T21:26:18.795+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
