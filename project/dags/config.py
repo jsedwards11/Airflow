@@ -1,7 +1,7 @@
 import os
 
-TOMTOM_API = os.getenv("TOMTOM_API", "https://api.midway.tomtom.com/ranking/liveHourly/IDN_jakarta")
-CSV_FILE_DIR = os.getenv("CSV_FILE_DIR", "/opt/airflow/dags/datasets/tomtom")
+TOMTOM_API = os.getenv("REDDIT_API", "https://www.reddit.com/r/Cars/top.json?limit=10")
+CSV_FILE_DIR = os.getenv("CSV_FILE_DIR", "/opt/airflow/dags/datasets/reddit")
 
 PSQL_DB = os.getenv("PSQL_DB", "airflow")
 PSQL_USER = os.getenv("PSQL_USER", "airflow")

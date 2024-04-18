@@ -1,11 +1,9 @@
-"""Overall, this code sets up a SQLAlchemy model representing a table named tomtom in the database,
-along with necessary functions and classes to manage database connections and initialization. It's a
-common pattern used in Python applications for interacting with relational databases."""
+"""Set up a SQLAlchemy model representing a table named reddit in the database,
+along with necessary functions and classes to manage database connections and initialization."""
 
-import uuid
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import create_engine, Column, String, Integer, Float, DateTime, Date
+from sqlalchemy import create_engine, Column, String, Integer, DateTime
 
 
 class Connection(object):
@@ -32,23 +30,25 @@ def init_db(db_connection):
 
 
 class Tomtom(Base):
-    __tablename__ = 'tomtom'
+    __tablename__ = 'reddit'
 
-    timestamp = Column(Integer, primary_key=True)
-    date_time = Column(DateTime)
-    traffic_index = Column(Integer)
-    jams_count = Column(Integer)
-    jams_length = Column(Float)
-    jams_delay = Column(Float)
-    traffic_index_weekago = Column(Integer)
-    weekday = Column(String)
+    id = Column(String, primary_key=True)
+    title = Column(String)
+    author = Column(String)
+    subreddit = Column(String)
+    upvotes = Column(Integer)
+    score = Column(Integer)
+    comments = Column(Integer)
+    url = Column(String)
+    created_date = Column(DateTime)
 
-    def __init__(self, timestamp, date_time, traffic_index, jams_count, jams_length, jams_delay, traffic_index_weekago, weekday):
-        self.timestamp = timestamp
-        self.date_time = date_time
-        self.traffic_index = traffic_index
-        self.jams_count = jams_count
-        self.jams_length = jams_length
-        self.jams_delay = jams_delay
-        self.traffic_index_weekago = traffic_index_weekago
-        self.weekday = weekday
+    def __init__(self, id, title, author, subreddit, upvotes, score, comments, url, created_date):
+        self.id = id
+        self.title = title
+        self.author = author
+        self.subreddit = subreddit
+        self.upvotes = upvotes
+        self.score = score
+        self.comments = comments
+        self.url = url
+        self.created_date = created_date
