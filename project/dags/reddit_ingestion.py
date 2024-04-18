@@ -1,6 +1,5 @@
-"""Overall, reddit_ingestion.py retrieves data from the Tomtom API, processes it, filters
-it to include only data from yesterday, and saves it to a CSV file. It's designed to be run
-from the command line with the --date argument specifying the fetch date."""
+"""Retrieve data from Reddit API, process it, and filter it to include only data from yesterday, then save it to a CSV
+file. Designed to be run from the command line with the --date argument specifying the fetch date."""
 
 import requests
 import argparse
@@ -8,17 +7,18 @@ import os
 
 from datetime import timedelta, datetime
 import pandas as pd
-import json
 
 import config
 
-rename_header = { 'JamsDelay'          : 'jams_delay',
-                  'TrafficIndexLive'   : 'traffic_index',
-                  'UpdateTime'         : 'date_time',
-                  'JamsLength'         : 'jams_length',
-                  'JamsCount'          : 'jams_count',
-                  'TrafficIndexWeekAgo': 'traffic_index_weekago'}
-reposition_header = ['timestamp', 'date_time', 'traffic_index', 'jams_count', 'jams_length', 'jams_delay', 'traffic_index_weekago']
+# rename_header = {'ID': 'id',
+#                  'Title': 'title',
+#                  'Author': 'author',
+#                  'Subreddit': 'subreddit',
+#                  'Upvotes': 'upvotes',
+#                  'Score': 'score',
+#                  'UR:': 'url',
+#                  'Created Date': 'created_date'}
+# reposition_header = ['timestamp', 'date_time', 'traffic_index', 'jams_count', 'jams_length', 'jams_delay', 'traffic_index_weekago']
 
 
 def get_yesterday_date(fetch_date):
@@ -27,12 +27,12 @@ def get_yesterday_date(fetch_date):
 
 def get_file_path(fetch_date):
     yesterday = get_yesterday_date(fetch_date)
-    filename = "tomtom_{}.csv".format(yesterday)
+    filename = "reddit_{}.csv".format(yesterday)
     return os.path.join(config.CSV_FILE_DIR, filename)
 
 
 def import_data():
-    url = config.TOMTOM_API
+    url = config.REDDIT_API
     data_req = requests.get(url)
     data_json = data_req.json()
     return data_json
@@ -40,24 +40,25 @@ def import_data():
 
 def transform_data(data_json):
     dataframe = pd.DataFrame(data_json['data'])
-    df = dataframe.rename(columns=rename_header)
+    # df = dataframe.rename(columns=rename_header)
+    df = dataframe
     df['timestamp'] = df['date_time'].copy()
-    df = df[reposition_header]
+    # df = df[reposition_header]
     # convert timezone(UTC) to local time(Jakarta)
-    df.date_time = pd.to_datetime(df.date_time, unit="ms")
-    df.date_time = df.date_time.dt.tz_localize('UTC').dt.tz_convert('Asia/Jakarta').apply(lambda d: d.replace(tzinfo=None))
-    df['weekday'] = df['date_time'].dt.day_name()
-    df['timestamp'] = df['timestamp']/1000
-    df['timestamp'] = df['timestamp'].astype(int)
-    df = df.fillna(0)
-    df['traffic_index_weekago'] = df['traffic_index_weekago'].astype(int)
+    # df.date_time = pd.to_datetime(df.date_time, unit="ms")
+    # df.date_time = df.date_time.dt.tz_localize('UTC').dt.tz_convert('Asia/Jakarta').apply(lambda d: d.replace(tzinfo=None))
+    # df['weekday'] = df['date_time'].dt.day_name()
+    # df['timestamp'] = df['timestamp']/1000
+    # df['timestamp'] = df['timestamp'].astype(int)
+    # df = df.fillna(0)
+    # df['traffic_index_weekago'] = df['traffic_index_weekago'].astype(int)
     return df
 
 
 def get_new_data(df, fetch_date):
     yesterday = get_yesterday_date(fetch_date)
-    df = df.sort_values(by=['timestamp'], ascending=True)
-    data_to_append = df[(df['date_time'].dt.date == yesterday)]
+    df = df.sort_values(by=['created_at'], ascending=True)
+    data_to_append = df[(df['created_at'].dt.date == yesterday)]
     return data_to_append
 
 
