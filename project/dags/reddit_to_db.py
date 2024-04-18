@@ -1,4 +1,4 @@
-"""Overall, tomtom_to_db.py retrieves data from a CSV file, transforms it into instances
+"""Overall, reddit_to_db.py retrieves data from a CSV file, transforms it into instances
 of the Tomtom class, performs data manipulation and cleaning, deletes existing data for
 yesterday's date from the database, and inserts the new data into the tomtom table. It's
 designed to be run from the command line with the --date and --connection arguments specifying

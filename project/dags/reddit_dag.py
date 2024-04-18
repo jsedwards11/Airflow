@@ -1,8 +1,7 @@
-"""Overall, this DAG schedules two tasks: one for importing data from Tomtom to a CSV file and
-another for exporting data from the CSV file to a database. The tasks are scheduled to run daily,
-and t2 depends on t1."""
+"""Schedules two tasks: import data from Reddit to a CSV file and export data from the CSV file to a database.
+Tasks are scheduled to run daily, and t2 depends on t1."""
 
-from datetime import datetime, timedelta
+from datetime import timedelta
 
 from airflow import DAG
 from airflow.models import Variable
@@ -16,21 +15,21 @@ default_args = {
     'retry_delay': timedelta(minutes=5),
 }
 with DAG(
-    'tomtom',
+    'reddit',
     default_args=default_args,
-    description='Schedule Tomtom Ingestion',
+    description='Schedule Reddit Ingestion',
     schedule_interval="@daily",
     start_date=days_ago(6),
     catchup=True
 ) as dag:
 
     t1 = BashOperator(
-        task_id='import_tomtom_data_to_csv',
-        bash_command='python /opt/airflow/dags/tomtom_ingestion.py --date {{ ds }}'
+        task_id='import_reddit_data_to_csv',
+        bash_command='python /opt/airflow/dags/reddit_ingestion.py --date {{ ds }}'
     )
     t2 = BashOperator(
         task_id='export_data_to_db',
-        bash_command='python /opt/airflow/dags/tomtom_to_db.py '
+        bash_command='python /opt/airflow/dags/reddit_to_db.py '
                      '--date {{ ds }} --connection %s' % Variable.get("data_dev_connection")
     )
 

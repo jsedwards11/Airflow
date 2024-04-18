@@ -1,4 +1,4 @@
-"""Overall, tomtom_ingestion.py retrieves data from the Tomtom API, processes it, filters
+"""Overall, reddit_ingestion.py retrieves data from the Tomtom API, processes it, filters
 it to include only data from yesterday, and saves it to a CSV file. It's designed to be run
 from the command line with the --date argument specifying the fetch date."""
 
