@@ -1,7 +1,6 @@
-"""Overall, reddit_to_db.py retrieves data from a CSV file, transforms it into instances
-of the Tomtom class, performs data manipulation and cleaning, deletes existing data for
-yesterday's date from the database, and inserts the new data into the tomtom table. It's
-designed to be run from the command line with the --date and --connection arguments specifying
+"""Retrieve data from a CSV file, transform it into instances of the Reddit class, perform data manipulation and
+cleaning, delete existing data for yesterday's date from the database, and insert new data into the reddit table.
+Designed to be run from the command line with the --date and --connection arguments specifying
 the fetch date and database connection string, respectively."""
 
 import argparse
@@ -9,7 +8,7 @@ import os
 import csv
 from datetime import timedelta, datetime
 
-from model import Connection, Tomtom
+from model import Connection, Reddit
 import config
 
 
@@ -19,7 +18,7 @@ def get_yesterday_date(fetch_date):
 
 def get_file_path(fetch_date):
     yesterday = get_yesterday_date(fetch_date)
-    filename = "tomtom_{}.csv".format(yesterday)
+    filename = "reddit_{}.csv".format(yesterday)
     return os.path.join(config.CSV_FILE_DIR, filename)
 
 
@@ -31,19 +30,14 @@ def main(fetch_date, db_connection):
     with open(filename, encoding='utf-8') as csvf:
         csv_reader = csv.DictReader(csvf)
         for row in csv_reader:
-            tomtom_data = Tomtom(timestamp=row['timestamp'],
-                                date_time=row['date_time'],
-                                traffic_index=row['traffic_index'],
-                                jams_count=row['jams_count'],
-                                jams_length=row['jams_length'],
-                                jams_delay=row['jams_delay'],
-                                traffic_index_weekago=row['traffic_index_weekago'],
-                                weekday=row['weekday'])
-            data_insert.append(tomtom_data)
+            reddit_data = Reddit(id=row['id'], title=row['title'], author=row['author'], subreddit=row['subreddit'],
+                                 upvotes=row['upvotes'], score=row['score'], comments=row['comments'], url=row['url'],
+                                 created_date=row['created_date'])
+            data_insert.append(reddit_data)
 
     connection = Connection(db_connection)
     session = connection.get_session()
-    session.execute("DELETE FROM tomtom where date_time >= timestamp '{} 00:00:00' and date_time < timestamp'{} 00:00:00'".format(yesterday, fetch_date))
+    session.execute("DELETE FROM reddit where created_date >= timestamp '{} 00:00:00' and date_time < timestamp'{} 00:00:00'".format(yesterday, fetch_date))
     session.bulk_save_objects(data_insert)
     session.commit()
     session.close()

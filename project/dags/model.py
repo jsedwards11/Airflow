@@ -29,7 +29,7 @@ def init_db(db_connection):
     Base.metadata.create_all(bind=engine)
 
 
-class Tomtom(Base):
+class Reddit(Base):
     __tablename__ = 'reddit'
 
     id = Column(String, primary_key=True)
