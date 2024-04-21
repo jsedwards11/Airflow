@@ -31,13 +31,13 @@ def main(fetch_date, db_connection):
         csv_reader = csv.DictReader(csvf)
         for row in csv_reader:
             reddit_data = Reddit(id=row['id'], title=row['title'], author=row['author'], subreddit=row['subreddit'],
-                                 upvotes=row['upvotes'], score=row['score'], comments=row['comments'], url=row['url'],
+                                 upvote_ratio=row['upvote_ratio'], score=row['score'], url=row['url'],
                                  created_date=row['created_date'])
             data_insert.append(reddit_data)
 
     connection = Connection(db_connection)
     session = connection.get_session()
-    session.execute("DELETE FROM reddit where created_date >= timestamp '{} 00:00:00' and date_time < timestamp'{} 00:00:00'".format(yesterday, fetch_date))
+    session.execute("DELETE FROM reddit where created_date >= timestamp '{} 00:00:00'".format(yesterday, fetch_date))
     session.bulk_save_objects(data_insert)
     session.commit()
     session.close()

@@ -3,7 +3,7 @@ along with necessary functions and classes to manage database connections and in
 
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import create_engine, Column, String, Integer, DateTime
+from sqlalchemy import create_engine, Column, String, Integer, DateTime, Float
 
 
 class Connection(object):
@@ -36,19 +36,17 @@ class Reddit(Base):
     title = Column(String)
     author = Column(String)
     subreddit = Column(String)
-    upvotes = Column(Integer)
+    upvote_ratio = Column(Float)
     score = Column(Integer)
-    comments = Column(Integer)
     url = Column(String)
     created_date = Column(DateTime)
 
-    def __init__(self, id, title, author, subreddit, upvotes, score, comments, url, created_date):
+    def __init__(self, id, title, author, subreddit, upvote_ratio, score, url, created_date):
         self.id = id
         self.title = title
         self.author = author
         self.subreddit = subreddit
-        self.upvotes = upvotes
+        self.upvote_ratio = upvote_ratio
         self.score = score
-        self.comments = comments
         self.url = url
         self.created_date = created_date

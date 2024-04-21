@@ -19,7 +19,7 @@ def main(db_connection):
     title VARCHAR(250), 
     author VARCHAR(100), 
     subreddit VARCHAR(50), 
-    upvotes INT, 
+    upvote_ratio DECIMAL, 
     score INT, 
     comments INT, 
     url VARCHAR(250),
