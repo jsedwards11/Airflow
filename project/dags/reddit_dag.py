@@ -19,7 +19,7 @@ with DAG(
     default_args=default_args,
     description='Schedule Reddit Ingestion',
     schedule_interval="@daily",
-    start_date=days_ago(6),
+    start_date=days_ago(1),
     catchup=True
 ) as dag:
 

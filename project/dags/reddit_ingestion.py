@@ -1,42 +1,29 @@
-"""Retrieve data from Reddit API, process it, and filter it to include only data from yesterday, then save it to a CSV
-file. Designed to be run from the command line with the --date argument specifying the fetch date."""
-
 import requests
 import argparse
 import os
-
 from datetime import timedelta, datetime
 import pandas as pd
-
 import config
-
-# rename_header = {'ID': 'id',
-#                  'Title': 'title',
-#                  'Author': 'author',
-#                  'Subreddit': 'subreddit',
-#                  'Upvotes': 'upvotes',
-#                  'Score': 'score',
-#                  'UR:': 'url',
-#                  'Created Date': 'created_date'}
-# reposition_header = ['timestamp', 'date_time', 'traffic_index', 'jams_count', 'jams_length', 'jams_delay', 'traffic_index_weekago']
 
 
 def get_yesterday_date(fetch_date):
+    """Get the date for yesterday based on fetch_date."""
     return datetime.strptime(fetch_date, '%Y-%m-%d').date() - timedelta(1)
 
 
 def get_file_path(fetch_date):
+    """Construct file path for CSV output based on fetch_date."""
     yesterday = get_yesterday_date(fetch_date)
-    filename = "reddit_{}.csv".format(yesterday)
+    filename = f"reddit_{yesterday}.csv"
     return os.path.join(config.CSV_FILE_DIR, filename)
 
 
 def import_data():
     url = config.REDDIT_API
     headers = config.HEADERS
-    data_req = requests.get(url, headers=headers)
-    data_json = data_req.json()
-    return data_json
+    response = requests.get(url, headers=headers)
+    response.raise_for_status()
+    return response.json()
 
 
 def transform_data(data_json):
@@ -48,15 +35,18 @@ def transform_data(data_json):
 
 def get_new_data(df, fetch_date):
     yesterday = get_yesterday_date(fetch_date)
-    df = df.sort_values(by=['created_date'], ascending=True)
-    data_to_append = df[(df['created_date'].dt.date == yesterday)]
-    return data_to_append
+    return df[df['created_date'].dt.date == yesterday]
 
 
 def save_new_data_to_csv(data_to_append, fetch_date):
     filename = get_file_path(fetch_date)
-    if not data_to_append.empty:
-        data_to_append.to_csv(filename, encoding='utf-8', index=False)
+    if os.path.exists(filename):
+        existing_data = pd.read_csv(filename)
+        new_data = data_to_append[~data_to_append['id'].isin(existing_data['id'])]
+    else:
+        new_data = data_to_append
+    if not new_data.empty:
+        new_data.to_csv(filename, mode='a', header=False, encoding='utf-8', index=False)
 
 
 def main(fetch_date):

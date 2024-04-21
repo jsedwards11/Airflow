@@ -1,6 +1,6 @@
 import os
 
-REDDIT_API = os.getenv("REDDIT_API", "https://www.reddit.com/r/Cars/top.json?limit=10")
+REDDIT_API = os.getenv("REDDIT_API", "https://www.reddit.com/r/Cars/top.json")
 HEADERS = {'User-agent': 'your_bot_0.1'}
 CSV_FILE_DIR = os.getenv("CSV_FILE_DIR", "/opt/airflow/dags/datasets/reddit")
 
