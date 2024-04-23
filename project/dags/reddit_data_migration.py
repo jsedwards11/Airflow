@@ -8,7 +8,7 @@ from model import Connection
 import config
 
 
-# Initialize Tomtom Table
+# Initialize Reddit Table
 def main(db_connection):
     Path(config.CSV_FILE_DIR).mkdir(parents=True, exist_ok=True)
 

@@ -18,25 +18,26 @@ def get_file_path(fetch_date):
 
 
 def main(fetch_date, db_connection):
-    yesterday = get_yesterday_date(fetch_date)
     filename = get_file_path(fetch_date)
     data_insert = []
+
+    # Get existing IDs from the database
+    connection = Connection(db_connection)
+    session = connection.get_session()
+    existing_ids = {row[0] for row in session.query(Reddit.id).all()}
+    session.close()
+
     with open(filename, encoding='utf-8') as csvf:
         csv_reader = csv.DictReader(csvf)
         for row in csv_reader:
-            reddit_data = Reddit(id=row['id'], title=row['title'], author=row['author'], subreddit=row['subreddit'],
-                                 upvote_ratio=row['upvote_ratio'], score=row['score'], url=row['url'],
-                                 created_date=row['created_date'])
-            data_insert.append(reddit_data)
+            # Check if ID already exists in the database
+            if row['id'] not in existing_ids:
+                reddit_data = Reddit(id=row['id'], title=row['title'], author=row['author'], subreddit=row['subreddit'],
+                                     upvote_ratio=row['upvote_ratio'], score=row['score'], url=row['url'],
+                                     created_date=row['created_date'])
+                data_insert.append(reddit_data)
     connection = Connection(db_connection)
     session = connection.get_session()
-    # Delete existing data for yesterday's date where the id already exists
-    existing_ids = tuple(reddit.id for reddit in data_insert)  # Convert list to tuple
-    placeholders = ', '.join([f"'{id_}'" for id_ in existing_ids])  # Surround each id with quotes
-    query = f"DELETE FROM reddit WHERE created_date >= '{yesterday} 00:00:00' AND id IN ({placeholders})"
-    session.execute(query)
-
-    # Insert new data into the reddit table
     session.bulk_save_objects(data_insert)
     session.commit()
     session.close()

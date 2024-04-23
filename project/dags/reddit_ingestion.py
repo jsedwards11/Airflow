@@ -4,15 +4,17 @@ import os
 from datetime import timedelta, datetime
 import pandas as pd
 import config
+import logging
+
+logging.basicConfig()
+logger = logging.getLogger(__name__)
 
 
 def get_yesterday_date(fetch_date):
-    """Get the date for yesterday based on fetch_date."""
     return datetime.strptime(fetch_date, '%Y-%m-%d').date() - timedelta(1)
 
 
 def get_file_path(fetch_date):
-    """Construct file path for CSV output based on fetch_date."""
     yesterday = get_yesterday_date(fetch_date)
     filename = f"reddit_{yesterday}.csv"
     return os.path.join(config.CSV_FILE_DIR, filename)
@@ -22,7 +24,6 @@ def import_data():
     url = config.REDDIT_API
     headers = config.HEADERS
     response = requests.get(url, headers=headers)
-    response.raise_for_status()
     return response.json()
 
 
@@ -33,27 +34,16 @@ def transform_data(data_json):
     return df
 
 
-def get_new_data(df, fetch_date):
-    yesterday = get_yesterday_date(fetch_date)
-    return df[df['created_date'].dt.date == yesterday]
-
-
-def save_new_data_to_csv(data_to_append, fetch_date):
+def save_new_data_to_csv(df, fetch_date):
     filename = get_file_path(fetch_date)
-    if os.path.exists(filename):
-        existing_data = pd.read_csv(filename)
-        new_data = data_to_append[~data_to_append['id'].isin(existing_data['id'])]
-    else:
-        new_data = data_to_append
-    if not new_data.empty:
-        new_data.to_csv(filename, mode='a', header=False, encoding='utf-8', index=False)
+    if not df.empty:
+        df.to_csv(filename, encoding='utf-8', index=False)
 
 
 def main(fetch_date):
     data_json = import_data()
     df = transform_data(data_json)
-    data_to_append = get_new_data(df, fetch_date)
-    save_new_data_to_csv(data_to_append, fetch_date)
+    save_new_data_to_csv(df, fetch_date)
 
 
 if __name__ == '__main__':
