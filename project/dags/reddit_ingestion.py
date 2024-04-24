@@ -6,12 +6,18 @@ import pandas as pd
 import config
 import logging
 
-logging.basicConfig()
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s - %(levelname)s - %(name)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
 logger = logging.getLogger(__name__)
 
 
 def get_yesterday_date(fetch_date):
-    return datetime.strptime(fetch_date, '%Y-%m-%d').date() - timedelta(1)
+    yesterday = datetime.strptime(fetch_date, '%Y-%m-%d').date() - timedelta(1)
+    logger.debug(f"Derived yesterday's date {yesterday} from fetch date {fetch_date}")
+    return yesterday
 
 
 def get_file_path(fetch_date):
@@ -38,9 +44,13 @@ def save_new_data_to_csv(df, fetch_date):
     filename = get_file_path(fetch_date)
     if not df.empty:
         df.to_csv(filename, encoding='utf-8', index=False)
+        logger.debug(f"Data saved to {filename} for fetch date {fetch_date}")
+    else:
+        logger.debug(f"No data to save for fetch date {fetch_date}; DataFrame is empty")
 
 
 def main(fetch_date):
+    logger.debug(f"Script started with fetch date: {fetch_date}")
     data_json = import_data()
     df = transform_data(data_json)
     save_new_data_to_csv(df, fetch_date)
